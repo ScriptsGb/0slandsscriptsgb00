@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Scripts-Gb", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
-    Name = "kkakaka",
+    Name = "🚪 • Home",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -22,19 +22,7 @@ Tab:AddSlider({
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
 	ValueName = "bananas",
-	Callback = function(local player = game.Players.LocalPlayer
-
-local minSpeed = 0
-local maxSpeed = 150
-
--- Substitua o caminho abaixo pelo caminho correto do Slider
-local slider = game.Workspace.Slider
-
-slider.Changed:Connect(function()
-    local speed = slider.Value
-    speed = math.clamp(speed, minSpeed, maxSpeed)
-    player.Character.Humanoid.WalkSpeed = speed
-end))
+	Callback = function(local player = game.Players.LocalPlayer local slider = script.Parent  minSpeed = 0 local maxSpeed = 150  slider.Changed:Connect(function()     local speed = slider.Value     speed = math.clamp(speed, minSpeed, maxSpeed)     player.Character.Humanoid.WalkSpeed = speed end))
 		print(Value)
 	end    
 })
