@@ -14,5 +14,30 @@ Tab:AddButton({
       end    
 })
 
+Tab:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "bananas",
+	Callback = function(local player = game.Players.LocalPlayer
+
+local minSpeed = 0
+local maxSpeed = 150
+
+-- Substitua o caminho abaixo pelo caminho correto do Slider
+local slider = game.Workspace.Slider
+
+slider.Changed:Connect(function()
+    local speed = slider.Value
+    speed = math.clamp(speed, minSpeed, maxSpeed)
+    player.Character.Humanoid.WalkSpeed = speed
+end))
+		print(Value)
+	end    
+})
+
 
 OrionLib:Init()
