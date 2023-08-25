@@ -9,7 +9,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddButton({
     Name = "Scripts-Gb Discord Server",
-    Callback = function()
+    Callback = function(setclipboard("https://discord.gg/GpUdcZd86t"))
               print("Link Server This Copied Whit Success✅")
       end    
 })
