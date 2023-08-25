@@ -22,7 +22,7 @@ Tab:AddSlider({
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
 	ValueName = "bananas",
-	Callback = function(local player = game.Players.LocalPlayer local slider = script.Parent  minSpeed = 0 local maxSpeed = 150  slider.Changed:Connect(function()     local speed = slider.Value     speed = math.clamp(speed, minSpeed, maxSpeed)     player.Character.Humanoid.WalkSpeed = speed end))
+	Callback = function()
 		print(Value)
 	end    
 })
